@@ -11,7 +11,7 @@
 <p align="center">
 
 <br>
-<img src="http://ertogrul.github.io/images/michal.png" width="1000" height="300" alt="opt"/>
+<img src="http://ertogrul.github.io/images/michal.png" width="1000" height="240ś" alt="opt"/>
 
 <br>
 <br>
