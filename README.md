@@ -38,6 +38,13 @@
 <br>
 <br>
 
+## I am the software engineer working at IBM for a few years.  
+## My main interests are:
+* #### Reinforcement Learning
+* Optimization and the whole field of Analytics and Machine Learning
+* Qiskit and Quantum Computing
+
+
 <br>
 <br>
 <br>
