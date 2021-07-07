@@ -1,3 +1,10 @@
+<p align="center">
+
+<br>
+<img src="http://ertogrul.github.io/images/michal.png" width="1000" height="230" alt="opt"/>
+
+<br>
+<br>
 ## Hello.
 ## My name is Michal, great to see you here :)
 <br>
@@ -8,13 +15,7 @@
 * [Watson Workshops](https://ertogrul.github.io/watsonjam)   
 
 
-<p align="center">
 
-<br>
-<img src="http://ertogrul.github.io/images/michal.png" width="1000" height="240" alt="opt"/>
-
-<br>
-<br>
 <br>
 <br>
 <br>
