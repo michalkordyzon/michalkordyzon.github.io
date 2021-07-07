@@ -7,6 +7,9 @@
 <br>
 </p>
 
+<br>
+
+
 ## Hello.
 ## My name is Michal, great to see you here :)
 
@@ -24,8 +27,11 @@
 <br>
 <br>
 
-
-
+## Want to check some of my publications? Click below.
+* [article about Qiskit](https://spidersweb.pl/2020/11/qiskit-komputery-kwantowe.html)   
+* [article about Decision Optimization](https://spidersweb.pl/2021/03/sztuczna-inteligencja-nauczanie-maszynowe-i-optymalizacja-decyzji.html)
+* [Mainframe IBM Redbooks I have co-authored](https://www.oreilly.com/library/view/ibm-z14-technical/9780738442716/) 
+* [Mainframe IBM Redbooks I have co-authored](https://www.redbooks.ibm.com/redbooks/pdfs/sg248450.pdf) 
 
 
 <br>
