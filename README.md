@@ -7,8 +7,11 @@
 ## Want to check my workshops? Click below.
 * [Watson Workshops](https://ertogrul.github.io/watsonjam)   
 
+
+<p align="center">
+
 <br>
-<img src="http://ertogrul.github.io/images/watson.gif" width="200" height="300" alt="opt"/>
+<img src="http://ertogrul.github.io/images/michal.png" width="200" height="300" alt="opt"/>
 
 <br>
 <br>
