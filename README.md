@@ -41,8 +41,7 @@
 ## I am the software engineer working at IBM in Warsaw, Poland.  
 ## My main interests are:
 
-* ### Reinforcement Learning
-* ### Optimization and the whole field of Analytics and Machine Learning
+* ### Optimization, Machine Learning, Analytics
 * ### Qiskit and Quantum Computing
 
 
