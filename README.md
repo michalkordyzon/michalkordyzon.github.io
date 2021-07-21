@@ -1,7 +1,7 @@
 <p align="center">
 
 <br>
-<img src="http://ertogrul.github.io/images/michal.png" width="1000" height="220" alt="opt"/>
+<img src="http://ertogrul.github.io/images/michal.png" width="1000" height="210" alt="opt"/>
 
 <br>
 <br>
