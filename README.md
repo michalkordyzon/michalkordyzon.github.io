@@ -7,7 +7,7 @@
 <br>
 <br>
 
-## To see my workshops please click [here](https://michalkoryzon.github.io/watsonjam)   
+## To see my workshops please click [here](https://michalkordyzon.github.io/watsonjam)   
 
 <br>
 <br>
