@@ -1,13 +1,3 @@
-<p align="center">
-
-<br>
-<br>
-
-  
-
-<br>
-<br>
-</p>
 
 
 
@@ -21,7 +11,7 @@
 <br>
 <br>
 
-## Want to check my workshops? Click below.
+## To see my workshops please click below.
 * [Watson Workshops](https://michalkoryzon.github.io/watsonjam)   
 
 
@@ -31,7 +21,7 @@
 <br>
 <br>
 
-## Want to check some of my publications? Click below.
+## To see some of my publications click below.
 * [article about Qiskit](https://spidersweb.pl/2020/11/qiskit-komputery-kwantowe.html)   
 * [article about Decision Optimization](https://spidersweb.pl/2021/03/sztuczna-inteligencja-nauczanie-maszynowe-i-optymalizacja-decyzji.html)
 * [Mainframe IBM Redbooks I have co-authored](https://www.oreilly.com/library/view/ibm-z14-technical/9780738442716/) 
@@ -49,11 +39,6 @@
 * ### Optimization
 * ### neuro-symbolic AI (https://ibm.github.io/neuro-symbolic-ai-toolkit/repos/)
 * ### Qiskit
-
-
-<br>
-<br>
-<br>
 
 <br>
 <br>
