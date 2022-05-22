@@ -1,13 +1,13 @@
 <br>
 
-## Hello, great to see you here :)
+## Hello :)
 
 <br>
 <br>
 <br>
 <br>
 
-## To see my workshops please click [here](https://michalkordyzon.github.io/watsonjam)   
+## To see my workshops please go [here](https://michalkordyzon.github.io/watsonjam)   
 
 <br>
 <br>
