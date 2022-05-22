@@ -1,13 +1,11 @@
 <br>
 # Michał Kordyzon - personal site.
 ### (info about my work)
-### -----------------------------------------
+### ---------------------------------------------------------------------------------------------
 <br>
 <br>
 
 ## Hello :)
-
-<br>
 ## To see my workshops please go [here](https://michalkordyzon.github.io/watsonjam)   
 
 <br>
