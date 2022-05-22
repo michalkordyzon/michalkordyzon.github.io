@@ -14,9 +14,9 @@
 <br>
 
 
-## Hello.
-## My name is Michal, great to see you here :)
+## Hello, great to see you here :)
 
+<br>
 <br>
 <br>
 <br>
@@ -42,11 +42,13 @@
 <br>
 <br>
 
-## I am the software engineer working at IBM in Warsaw, Poland.  
+## I am a data scientist working for IBM.
 ## My main interests are:
 
-* ### Optimization, Machine Learning, Analytics
-* ### Qiskit and Quantum Computing
+* ### Machine Learning
+* ### Optimization
+* ### neuro-symbolic AI (https://ibm.github.io/neuro-symbolic-ai-toolkit/repos/)
+* ### Qiskit
 
 
 <br>
