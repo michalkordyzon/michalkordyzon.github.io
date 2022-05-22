@@ -22,7 +22,7 @@
 <br>
 
 ## Want to check my workshops? Click below.
-* [Watson Workshops](https://ertogrul.github.io/watsonjam)   
+* [Watson Workshops](https://michalkoryzon.github.io/watsonjam)   
 
 
 
@@ -59,7 +59,7 @@
 <br>
 <br>
 <p align="center">
-<img src="http://ertogrul.github.io/images/tumblr_think.gif" width="300" height="400" alt="opt"/>
+<img src="http://michalkordyzon.github.io/images/tumblr_think.gif" width="300" height="400" alt="opt"/>
 <br>
 <br>
 <br> 
