@@ -1,8 +1,4 @@
-
-
-
 <br>
-
 
 ## Hello, great to see you here :)
 
@@ -11,29 +7,24 @@
 <br>
 <br>
 
-## To see my workshops please click below.
-* [Watson Workshops](https://michalkoryzon.github.io/watsonjam)   
-
-
+## To see my workshops please click [here](https://michalkoryzon.github.io/watsonjam)   
 
 <br>
 <br>
 <br>
-<br>
 
-## To see some of my publications click below.
+## Check some of my publications:
 * [article about Qiskit](https://spidersweb.pl/2020/11/qiskit-komputery-kwantowe.html)   
 * [article about Decision Optimization](https://spidersweb.pl/2021/03/sztuczna-inteligencja-nauczanie-maszynowe-i-optymalizacja-decyzji.html)
 * [Mainframe IBM Redbooks I have co-authored](https://www.oreilly.com/library/view/ibm-z14-technical/9780738442716/) 
 * [Mainframe IBM Redbooks I have co-authored](https://www.redbooks.ibm.com/redbooks/pdfs/sg248450.pdf) 
-
 
 <br>
 <br>
 <br>
 
 ## I am a data scientist working for IBM.
-## My main interests are:
+## My interests are:
 
 * ### Machine Learning
 * ### Optimization
