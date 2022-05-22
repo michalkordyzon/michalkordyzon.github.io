@@ -1,4 +1,8 @@
 <br>
+# Michał Kordyzon - personal site.
+### (info about my work)
+<br>
+<br>
 
 ## Hello :)
 
