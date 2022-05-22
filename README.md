@@ -37,7 +37,7 @@
 
 * ### Machine Learning
 * ### Optimization
-* ### neuro-symbolic AI (https://ibm.github.io/neuro-symbolic-ai-toolkit/repos/)
+* ### [neuro-symbolic AI](https://ibm.github.io/neuro-symbolic-ai-toolkit/repos/) 
 * ### Qiskit
 
 <br>
