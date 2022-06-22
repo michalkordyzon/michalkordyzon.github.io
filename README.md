@@ -25,6 +25,7 @@
 <br>
 <br>
 <br>
+
 ## Check some of my publications:
 * [article about Qiskit](https://spidersweb.pl/2020/11/qiskit-komputery-kwantowe.html)   
 * [article about Decision Optimization](https://spidersweb.pl/2021/03/sztuczna-inteligencja-nauczanie-maszynowe-i-optymalizacja-decyzji.html)
