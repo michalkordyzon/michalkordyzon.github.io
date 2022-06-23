@@ -1,5 +1,5 @@
 <br>
-<p align="center">
+
 # Michał Kordyzon - personal site.
 ### (info about my work)
 ### -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -36,7 +36,7 @@
 <br>
 <br>
 <br>
-
+<p align="center">
 <img src="http://michalkordyzon.github.io/images/tumblr_think.gif" width="300" height="400" alt="opt"/>
 <br>
 <br>
