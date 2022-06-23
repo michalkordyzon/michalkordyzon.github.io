@@ -5,7 +5,7 @@
 <br>
 <br>
 
-<space><space><space> ## Hello :)
+## Hello :)
 ## To see my workshops please go [here](https://michalkordyzon.github.io/watsonjam)   
 
 <br>
@@ -14,7 +14,7 @@
 
 
 
->>>>>>>>>>>>>>>>>>> ## I am a data scientist working @IBM.
+          ## I am a data scientist working @IBM.
 ## My interests are:
 
    * ### Machine Learning
