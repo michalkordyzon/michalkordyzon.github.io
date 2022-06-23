@@ -5,7 +5,7 @@
 <br>
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp## Hello :)
+## Hello :)
 ## To see my workshops please go [here](https://michalkordyzon.github.io/watsonjam)   
 
 <br>
