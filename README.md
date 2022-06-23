@@ -14,7 +14,7 @@
 
 
 
-## I am a data scientist working @IBM.
+>>>>>>>>>>>>>>>>>>> ## I am a data scientist working @IBM.
 ## My interests are:
 
    * ### Machine Learning
