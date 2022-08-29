@@ -26,7 +26,7 @@
    * ### Visual Recognition
    Using Detectron framework on IBM platfrom named Maximo Visual Inspection I have created a use case where client's AGV carts are inspected for security, giving great value of automated daily security checks. If you are interested more, please watch [this youtube video](https://www.youtube.com/watch?v=keC8Tnj8OJ8&ab_channel=IBMDeveloper).
    
-   * ### neuro-symbolic AI
+   * ### Neuro-symbolic AI
    It's always beneficial to attend a good summer school like [this one](https://ibm.github.io/neuro-symbolic-ai/events/ns-summerschool2022/). Neural-symbolic AI is a kind of deductive system allowing you to put reasoning layer on top of your neural nets.
    You will find general info about neural-symbolic AI [here](https://ibm.github.io/neuro-symbolic-ai/). 
    If you want hands on experience, take [this neural-symbolic AI badge](https://www.credly.com/badges/a9c7f8c5-5d62-4437-aa57-977f779b21d5/linked_in?t=rh42yg).
