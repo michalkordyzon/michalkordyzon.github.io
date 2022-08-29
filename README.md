@@ -6,7 +6,7 @@
 <br>
 <br>
 ## Hello :)
-## To see my workshops please go [here](https://michalkordyzon.github.io/watsonjam)   
+## To see my workshops please go [here](https://michalkordyzon.github.io/watsonjam).   
 
 <br>
 <br>
