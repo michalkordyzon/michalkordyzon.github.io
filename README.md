@@ -18,8 +18,9 @@
 ## My interests are:
 
    * ### Machine Learning
-    (please see ma [latest project general info](https://michalkordyzon.github.io/watson_insurance/) )
+   Please see ma [latest project general info](https://michalkordyzon.github.io/watson_insurance/).
    * ### Optimization
+   Please see some [optimization workshops](https://michalkordyzon.github.io/watsonjam/)  I made for my clients.
    * ### [neuro-symbolic AI](https://ibm.github.io/neuro-symbolic-ai/) 
    * ### Qiskit
 
