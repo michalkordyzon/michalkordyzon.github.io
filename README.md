@@ -18,7 +18,7 @@
 ## My interests are:
 
    * ### Machine Learning
-   Please see my some notes about [my latest ML project](https://michalkordyzon.github.io/watson_insurance/) (code itself is proprietary). I am using tweedie regressor to count pure premium for insurance product and the whole thing (transfomer with model) is hosted on Watson Machine Learning and is using Watson OpenScale monitors to check model for bias, explainability, fainress and drift.
+   I engage in projects as [ML Engineer](https://www.credly.com/badges/6d6d21e9-eec4-463b-8f22-22d409103563) and as [Data Scientist](https://www.credly.com/badges/2d6770d6-c2eb-429f-bcdd-614e4327bf72). Please see my some notes about [my latest ML project](https://michalkordyzon.github.io/watson_insurance/) (code itself is proprietary). I am using tweedie regressor to count pure premium for insurance product and the whole thing (transfomer with model) is hosted on Watson Machine Learning and is using Watson OpenScale monitors to check model for bias, explainability, fainress and drift.
    * ### Optimization
    Please see some [optimization workshops](https://michalkordyzon.github.io/watsonjam/)  I made for my clients. Decision Optimization is great way to enhance your machine learning projects and give more fresh insigths. 
    For optimization projects I am using CPLEX, library from IBM implement optimization efficiently.
