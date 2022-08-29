@@ -18,6 +18,7 @@
 ## My interests are:
 
    * ### Machine Learning
+    (see ma latest project - 
    * ### Optimization
    * ### [neuro-symbolic AI](https://ibm.github.io/neuro-symbolic-ai/) 
    * ### Qiskit
