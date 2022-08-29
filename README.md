@@ -27,7 +27,7 @@
    You will find general info about neural-symbolic AI [here](https://ibm.github.io/neuro-symbolic-ai/). 
    If you want hands on experience, take [this neural-symbolic AI badge](https://www.credly.com/badges/a9c7f8c5-5d62-4437-aa57-977f779b21d5/linked_in?t=rh42yg).
    * ### Qiskit
-   In 2020 I have spent the summer on learning about Qiskit were I contributed and attended [hackathons](https://www.credly.com/badges/7e4653bd-141a-4280-8544-f345fb7232be). It goes in pair with my another interest - optimization. 
+   In 2020 I have spent the summer learning about Qiskit were I contributed and attended [hackathons](https://www.credly.com/badges/7e4653bd-141a-4280-8544-f345fb7232be). It goes in pair with my another interest - optimization. 
 
 <br>
 <br>
