@@ -22,6 +22,10 @@
    * ### Optimization
    Please see my two [optimization workshops](https://michalkordyzon.github.io/watsonjam/) I made for my clients. Decision Optimization (aka prescriptive analytics) is great way to enhance your machine learning projects and to approach problems from different perspective.
    For optimization projects I am using CPLEX, and DOcplex, two IBM libraries that can help build our dynamic programming models efficiently.
+   
+   * ### Visual Recognition
+   Using Detectron framework on IBM platfrom named Maximo Visual Inspection I have created a use case where client's AGV carts are inspected for security, giving great value of automated daily security checks. If you are interested more, please watch [this youtube video](https://www.youtube.com/watch?v=keC8Tnj8OJ8&ab_channel=IBMDeveloper).
+   
    * ### neuro-symbolic AI
    It's always beneficial to attend a good summer school like [this one](https://ibm.github.io/neuro-symbolic-ai/events/ns-summerschool2022/). Neural-symbolic AI is a kind of deductive system allowing you to put reasoning layer on top of your neural nets.
    You will find general info about neural-symbolic AI [here](https://ibm.github.io/neuro-symbolic-ai/). 
