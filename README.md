@@ -18,9 +18,10 @@
 ## My interests are:
 
    * ### Machine Learning
-   Please see my some notes about [my latest ML project](https://michalkordyzon.github.io/watson_insurance/) (code itself is proprietary).
+   Please see my some notes about [my latest ML project](https://michalkordyzon.github.io/watson_insurance/) (code itself is proprietary). I am using tweedie regressor to count pure premium for insurance product and the whole thing (transfomer with model) is hosted on Watson Machine Learning and is using Watson OpenScale monitors to check model for bias, explainability, fainress and drift.
    * ### Optimization
-   Please see some [optimization workshops](https://michalkordyzon.github.io/watsonjam/)  I made for my clients.
+   Please see some [optimization workshops](https://michalkordyzon.github.io/watsonjam/)  I made for my clients. 
+   For optimization projects I am using CPLEX, library from IBM implement optimization efficiently.
    * ### neuro-symbolic AI
    It's always beneficial to attend a good summer school like [this one](https://ibm.github.io/neuro-symbolic-ai/events/ns-summerschool2022/). Neural-symbolic AI is a kind of deductive system allowing you to put reasoning layer on top of your neural nets.
    You will find general info about neural-symbolic AI [here](https://ibm.github.io/neuro-symbolic-ai/). 
