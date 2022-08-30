@@ -27,11 +27,11 @@
    Using Detectron framework on IBM platfrom named Maximo Visual Inspection I have created a use case where client's AGV carts are inspected for security, giving great value of automated daily security checks. If you are interested more, please watch [this youtube video](https://www.youtube.com/watch?v=keC8Tnj8OJ8&ab_channel=IBMDeveloper).
    
    * ### Neuro-symbolic AI
-   It's always beneficial to attend a good summer school like [this one](https://ibm.github.io/neuro-symbolic-ai/events/ns-summerschool2022/). Neural-symbolic AI is a kind of deductive system allowing you to put reasoning layer on top of your neural nets.
+   It's always beneficial to attend a good summer school like [this one](https://ibm.github.io/neuro-symbolic-ai/events/ns-summerschool2022/). Neural-symbolic AI is kind of deductive system allowing you to put a reasoning layer on top of your neural nets.
    You will find general info about neural-symbolic AI [here](https://ibm.github.io/neuro-symbolic-ai/). 
    If you want hands on experience, take [this neural-symbolic AI badge](https://www.credly.com/badges/a9c7f8c5-5d62-4437-aa57-977f779b21d5/linked_in?t=rh42yg).
    * ### Qiskit
-   In 2020 I have spent a summer learning about [Qiskit](https://qiskit.org/), quantum SDK for programming quantum computers using Python. I have contributed to Qiskit in many ways, attended [hackathons](https://www.credly.com/badges/7e4653bd-141a-4280-8544-f345fb7232be), and enjoyed being the part of the community. Quantum (and Qiskit) goes in pair with another interest of mine: optimization. Some models created on CPLEX and DOcplex libraries can be run on qubits (i.e. on quantum computer). :)   
+   In 2020 I have spent a summer (and few consecutive months) learning about [Qiskit](https://qiskit.org/), quantum SDK for programming quantum computers using Python. I have contributed to Qiskit in many ways, attended [hackathons](https://www.credly.com/badges/7e4653bd-141a-4280-8544-f345fb7232be), and enjoyed being the part of the community. Quantum (and Qiskit) goes in pair with another interest of mine: optimization. Some models created on CPLEX and DOcplex libraries can be run on qubits (i.e. on quantum computer). :)   
 
 <br>
 <br>
