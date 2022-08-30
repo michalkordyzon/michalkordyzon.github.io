@@ -20,7 +20,7 @@
    * ### Machine Learning
    I engage in projects as [ML Engineer](https://www.credly.com/badges/6d6d21e9-eec4-463b-8f22-22d409103563) and as [Data Scientist](https://www.credly.com/badges/2d6770d6-c2eb-429f-bcdd-614e4327bf72). Please see the notes about [my latest ML project](https://michalkordyzon.github.io/watson_insurance/) (code itself is proprietary, I created this project page for client and it is mainly about bussines value devlivered and useful technical ifnfo/help for client). In this project I have used tweedie regressor to count pure premium for insurance product and the whole thing (transfomer with model) was hosted on Watson Machine Learning and was using Watson OpenScale monitors to check model for bias, explainability, fairness and drift.
    * ### Optimization
-   Please see my two [optimization workshops](https://michalkordyzon.github.io/watsonjam/) I made for my clients. Decision Optimization (aka prescriptive analytics) is great way to enhance your machine learning projects and to approach problems from different perspective.
+   Please see my two [Decision Optimization workshops](https://michalkordyzon.github.io/watsonjam/) I made them for my clients. Decision Optimization (aka prescriptive analytics) is a great way to enhance your machine learning projects and to approach problems from different perspective.
    For optimization projects I am using CPLEX, and DOcplex, two IBM libraries that can help build our dynamic programming models efficiently.
    
    * ### Visual Recognition
