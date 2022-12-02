@@ -30,7 +30,7 @@
    * ### Neuro-symbolic AI
    It's always beneficial to attend a good summer school like [this one](https://ibm.github.io/neuro-symbolic-ai/events/ns-summerschool2022/). Neural-symbolic AI is kind of deductive system allowing you to put a reasoning layer on top of your neural nets.
    You will find general info about neural-symbolic AI [here](https://ibm.github.io/neuro-symbolic-ai/). 
-   If you want hands on experience, take [this badge](https://www.credly.com/badges/a9c7f8c5-5d62-4437-aa57-977f779b21d5/linked_in?t=rh42yg).
+   If you want the hands on experience, take all activities needed to get [this badge](https://www.credly.com/badges/a9c7f8c5-5d62-4437-aa57-977f779b21d5/linked_in?t=rh42yg).
    * ### Qiskit
    In 2020 I have spent a summer (and few consecutive months) learning about [Qiskit](https://qiskit.org/), brilliant Python SDK for quantum programming. I have contributed to Qiskit in many ways, attended [hackathons](https://www.credly.com/badges/7e4653bd-141a-4280-8544-f345fb7232be), and enjoyed being the part of the community. I am glad IBM is making such risky bets. Google's Larry Page famously said: "Especially in technology, we need revolutionary change, not incremental change."
 
@@ -42,8 +42,8 @@
 ## Check some of my publications:
    * [article about Qiskit](https://spidersweb.pl/2020/11/qiskit-komputery-kwantowe.html)   
    * [article about Decision Optimization](https://spidersweb.pl/2021/03/sztuczna-inteligencja-nauczanie-maszynowe-i-optymalizacja-decyzji.html)
-   * [Mainframe IBM Redbooks I have co-authored](https://www.oreilly.com/library/view/ibm-z14-technical/9780738442716/) 
-   * [Mainframe IBM Redbooks I have co-authored](https://www.redbooks.ibm.com/redbooks/pdfs/sg248450.pdf) 
+   * [System z IBM Redbook that I have co-authored](https://www.oreilly.com/library/view/ibm-z14-technical/9780738442716/) 
+   * [System z IBM Redbook that I have co-authored](https://www.redbooks.ibm.com/redbooks/pdfs/sg248450.pdf) 
 
 
 <br>
