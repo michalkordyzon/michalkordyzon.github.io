@@ -19,7 +19,7 @@
 ## My interests are:
 
 
-   * ### Recently - analytics :) 
+   * ### Recently - analytics ;) ;) ;)
    (I hope there will more to write here soon)
 
    * ### Machine Learning (with Explainability & Fairness)
