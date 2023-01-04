@@ -51,6 +51,10 @@
 <br>
 <br>
 <p align="center">
+<img src="http://michalkordyzon.github.io/images/gazsystemlogo.jpg" width="300" height="400" alt="opt"/>
+<br>
+<br>
+<br>
 <img src="http://michalkordyzon.github.io/images/tumblr_think.gif" width="300" height="400" alt="opt"/>
 <br>
 <br>
