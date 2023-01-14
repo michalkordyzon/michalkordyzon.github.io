@@ -19,14 +19,18 @@
 ## My interests are:
 
 
-   * ### Natural Language Processing, Analytics & Machine Learning
+   * ### Machine Learning & Analytics
    I engage in projects as a Data Engineer for analytics projects and as [an ML Engineer](https://www.credly.com/badges/6d6d21e9-eec4-463b-8f22-22d409103563), or [a Data Scientist](https://www.credly.com/badges/4c421bd9-e323-4fb4-a8be-45cae51e85af) for ML projects. As an example, see the notes about [my latest ML project](https://michalkordyzon.github.io/watson_insurance/). In this project I have used tweedie regressor with transformers to count pure premium for insurance product. Model and transformer were hosted on Watson Machine Learning and they used Watson OpenScale monitors to scan bias, explainability, fairness and drift.
+   
    * ### Optimization
    Please see my two [Decision Optimization workshops](https://michalkordyzon.github.io/watsonjam/) that I made for my clients. Decision Optimization (aka prescriptive analytics) is a great way to enrich machine learning projects.
    For optimization projects I am using CPLEX, and DOcplex, two IBM libraries that can help build our dynamic programming models efficiently.
    
    * ### Visual Recognition
    Using Detectron framework on IBM platfrom named Maximo Visual Inspection I have created a model where client's AGV carts were inspected for security, giving great value of automated daily security checks. Watch [this youtube video](https://www.youtube.com/watch?v=keC8Tnj8OJ8&ab_channel=IBMDeveloper) for more information. 
+   
+   * ### Natural Language Processing
+   Things are shaping up....
    
    * ### Neuro-symbolic AI
    It's always beneficial to attend a good summer school like [this one](https://ibm.github.io/neuro-symbolic-ai/events/ns-summerschool2022/). Neural-symbolic AI is kind of deductive system allowing you to put a reasoning layer on top of your neural nets.
