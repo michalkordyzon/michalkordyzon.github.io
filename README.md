@@ -30,7 +30,7 @@
    Using Detectron framework on IBM platfrom named Maximo Visual Inspection I have created a model where client's AGV carts were inspected for security, giving great value of automated daily security checks. Watch [this youtube video](https://www.youtube.com/watch?v=keC8Tnj8OJ8&ab_channel=IBMDeveloper) for more information. 
    
    * ### Natural Language Processing
-   Things are shaping up....
+   Things are shaping up...
    
    * ### Neuro-symbolic AI
    It's always beneficial to attend a good summer school like [this one](https://ibm.github.io/neuro-symbolic-ai/events/ns-summerschool2022/). Neural-symbolic AI is kind of deductive system allowing you to put a reasoning layer on top of your neural nets.
