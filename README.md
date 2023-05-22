@@ -19,8 +19,8 @@
 ## My interests are:
 
 
-   * ### Machine Learning & Analytics
-   I engage in projects as [an ML Engineer](https://www.credly.com/badges/6d6d21e9-eec4-463b-8f22-22d409103563), or as [a Data Scientist](https://www.credly.com/badges/4c421bd9-e323-4fb4-a8be-45cae51e85af). See the notes about [my latest ML project](https://michalkordyzon.github.io/watson_insurance/) as example. In this project I have used tweedie regressor with transformers to count pure premium for insurance product. Model and transformer were hosted on Watson Machine Learning and they used Watson OpenScale monitors to scan bias, explainability, fairness and drift.
+   * ### Machine Learning & Data Governance
+   I engage in my projects as [an ML Engineer](https://www.credly.com/badges/6d6d21e9-eec4-463b-8f22-22d409103563), or as [a Data Scientist](https://www.credly.com/badges/4c421bd9-e323-4fb4-a8be-45cae51e85af). See the notes about [my latest ML project](https://michalkordyzon.github.io/watson_insurance/) as example. In this project I have used tweedie regressor with transformers to count pure premium for insurance product. Model and transformer were hosted on Watson Machine Learning and they used Watson OpenScale monitors to scan bias, explainability, fairness and drift.
    
    * ### Optimization
    Please see my two [Decision Optimization workshops](https://michalkordyzon.github.io/watsonjam/) that I made for my clients. Decision Optimization (aka prescriptive analytics) is a great way to enrich machine learning projects.
