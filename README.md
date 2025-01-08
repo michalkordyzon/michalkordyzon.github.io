@@ -16,7 +16,11 @@
 
 
 ## I am a data scientist working @IBM.
-## My interests are:
+
+In 2023 and 2023 I was doing genAI projects using IBM watsonx.ai platform (IBM's vessel for LLMs). Most projects were about bots and RAG apps, some projects were about generating reports from tabular data, or about searching in large databases (like patents).
+
+
+## My interests before genAI era were:
 
 
    * ### Machine Learning & Data Governance
