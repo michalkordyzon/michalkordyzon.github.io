@@ -18,7 +18,7 @@ Here is the old link to [2020 Optimization workshops](https://michalkordyzon.git
 
 In 2023 and 2024 I was doing mainly genAI projects with watsonx.ai (IBM's vessel for LLMs). Most projects were about bots and RAG apps, some about creating reports from tabular data, and about searching in large patent databases.
 
-For me personally 2025 is the year of AI agents. I was fascinated with ides of AI agents for many years, giving public speaches about future AI agents impact. I have also popularized the idea on AI Alignment through an example of work made in IBM Resaerch where a reinforcemnet learning agent was created to win the game of Pacman but [without killing the ghosts](https://www.fastcompany.com/90255740/ibm-explores-the-intersection-of-ai-ethics-and-pac-man)
+For me personally 2025 is the year of AI agents. I was fascinated with idea of AI agents for many years, giving public speaches and engaging in early projects. For example I have engaged and popularized the idea on AI Alignment through Pacman game. IBM Research made the reinforcemnet learning agent to play & win the game of Pacman but [without killing the ghosts](https://www.fastcompany.com/90255740/ibm-explores-the-intersection-of-ai-ethics-and-pac-man)
 
 
 
