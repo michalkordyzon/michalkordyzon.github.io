@@ -7,7 +7,6 @@
 <br>
 ## Hi there 👋
 <br>
-## --> To see my workshops please go [here](https://michalkordyzon.github.io/watsonjam).   
 
 <br>
 <br>
@@ -17,10 +16,12 @@
 
 ## I am a data scientist working @IBM.
 
-In 2023 and 2023 I was doing genAI projects using IBM watsonx.ai platform (IBM's vessel for LLMs). Most projects were about bots and RAG apps, some projects were about generating reports from tabular data, or about searching in large databases (like patents).
+In 2023 and 2024 I was doing mainly genAI projects with watsonx.ai (IBM's vessel for LLMs). Most projects were about bots and RAG apps, some about creating reports from tabular data, and about searching in large patent databases.
+2025 begins with agents, RAG apps gets complex and are more capable. 
 
 
-## My interests before genAI era were:
+
+## My interests before genAI era :
 
 
    * ### Machine Learning & Data Governance
