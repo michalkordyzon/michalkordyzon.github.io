@@ -17,6 +17,7 @@
 ## I am a data scientist working @IBM.
 
 In 2023 and 2024 I was doing mainly genAI projects with watsonx.ai (IBM's vessel for LLMs). Most projects were about bots and RAG apps, some about creating reports from tabular data, and about searching in large patent databases.
+
 2025 begins with agents, RAG apps gets complex and are more capable. 
 
 
