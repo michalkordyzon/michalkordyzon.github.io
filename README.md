@@ -7,7 +7,7 @@
 <br>
 ## Hi there 👋
 <br>
-
+Here is the old link to [2020 Optimization workshops](https://michalkordyzon.github.io/watsonjam/)
 <br>
 <br>
 <br>
