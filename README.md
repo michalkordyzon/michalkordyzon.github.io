@@ -7,6 +7,8 @@
 <br>
 ## Hi there 👋
 <br>
+My new technical blog (it's a very recent project):[mlog](https://mlog.space/)
+<br>
 As requested, here is the old link to [2020 Optimization workshops](https://michalkordyzon.github.io/watsonjam/)
 <br>
 <br>
