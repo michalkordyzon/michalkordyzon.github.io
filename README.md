@@ -20,9 +20,9 @@ As requested, here is the old link to [2020 Optimization workshops](https://mich
 
 ## I am a data scientist working @IBM.
 
-In 2023 and 2024 I was doing mainly genAI projects with watsonx.ai (IBM's vessel for LLMs). Most projects were about bots and RAG apps, some about creating reports from tabular data, and about searching in large patent databases.
+2023 and 2024 were exciting years as GenAI spread rapidly and new breakthroughs appeared almost weekly. During that time, I worked on several GenAI projects using the watsonx.ai (IBM’s platform for LLMs). These projects focused on RAG applications, automated report generation (from both tabular data and documents), and “intelligent” search.
 
-For me personally 2025 is the year of AI agents. I was fascinated with idea of AI agents for many years, giving public speaches and engaging in early projects. For example I have engaged and popularized the idea on AI Alignment through Pacman game. IBM Research made the reinforcemnet learning agent to play & win the game of Pacman but [without killing the ghosts](https://www.fastcompany.com/90255740/ibm-explores-the-intersection-of-ai-ethics-and-pac-man)
+2025 is shaping up to be the year of AI agents. For me it's importnat. Not only because of their business value, but also as a personal milestone. I’ve been fascinated by agentic AI since 2017, giving public talks and joining early projects, though I still viewed it as a distant future. One example I often used to trigger semi-futuristic, semi-technical discussions was an IBM Research project where an AI agent played Pac-Man. The special thing was that AI agent played 'ethically' and avoided 'killing' ghosts (the reward function in reinfocement learning). Here is the link: [ethical Pacman](https://www.fastcompany.com/90255740/ibm-explores-the-intersection-of-ai-ethics-and-pac-man).
 
 
 
