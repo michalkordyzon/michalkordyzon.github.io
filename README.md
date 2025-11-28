@@ -18,9 +18,9 @@ My new technical blog:  [mlog](https://mlog.space/)
 ## I am a data scientist working @IBM
 
 ## genAI related projects
-Starting in end of 2022 the ear of genAI started, this technology  spread rapidly and new breakthroughs appeared almost weekly. Since then, I've been working mainly on genAI projects using open-source and proprietary watsonx.ai (IBM’s platform for LLMs). These projects focused on RAG applications, automated report generation (from both tabular data and documents), and “intelligent” search.
+Starting in end of 2022 the era of genAI started. Since then, I've been working mainly on genAI projects using open-source and proprietary watsonx.ai (IBM’s platform for LLMs). These projects focused on RAG applications, automated report generation (from both tabular data and documents), and “intelligent” search.
 
-2025 is shaping up to be the year of AI agents. For me it's importnat. Not only because of their business value, but also as a personal milestone. I’ve been fascinated by agentic AI since 2017, giving public talks and joining early projects, though I still viewed it as a distant future. One example I often used to trigger semi-futuristic, semi-technical discussions was an IBM Research project where an AI agent played Pac-Man. The special thing was that AI agent played 'ethically' and avoided 'killing' ghosts (the reward function in reinfocement learning). Here is the link: [ethical Pacman](https://www.fastcompany.com/90255740/ibm-explores-the-intersection-of-ai-ethics-and-pac-man).
+2025 is the year AI agents. For me it's important also for personal reasons. I’ve been fascinated by agentic AI since 2017. As an example I had a session about Reinforcement Learning Agents in 2020 on Think Warsaw where I was discussing with IBM Research guest the ethicacl agent created by IBM (the agent playing Pacman 'ethically', and avoided 'killing' ghosts :) :) :) . Here is the link: [ethical Pacman](https://www.fastcompany.com/90255740/ibm-explores-the-intersection-of-ai-ethics-and-pac-man).
 
 
 ## ML related projects
