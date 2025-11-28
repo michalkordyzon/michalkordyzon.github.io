@@ -1,6 +1,6 @@
 <br>
 
-# Michał Kordyzon - personal site.
+# Michał Kordyzon - personal site
 ### (info about my work)
 ### -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 <br>
@@ -8,14 +8,14 @@
 ## Hi there 👋
 <br>
 <br>
-My new technical blog (it's a very recent project):[mlog](https://mlog.space/)
+My new technical blog:[mlog](https://mlog.space/)
 <br>
 <br>
 <br>
 
 
 
-## I am a data scientist working @IBM.
+## I am a data scientist working @IBM
 
 ## genAI related projects
 2023 and 2024 were exciting years as GenAI spread rapidly and new breakthroughs appeared almost weekly. During that time, I worked on several GenAI projects using the watsonx.ai (IBM’s platform for LLMs). These projects focused on RAG applications, automated report generation (from both tabular data and documents), and “intelligent” search.
