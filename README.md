@@ -29,14 +29,14 @@ My new technical blog:  [mlog](https://mlog.space/)
    I have engaged in many projects as [an ML Engineer](https://www.credly.com/badges/6d6d21e9-eec4-463b-8f22-22d409103563), or as [a Data Scientist](https://www.credly.com/badges/4c421bd9-e323-4fb4-a8be-45cae51e85af). See the notes about [one interesting ML project](https://michalkordyzon.github.io/watson_insurance/) as example. I have used theere a tweedie regressor with transformers to count pure premiums for insurance product. Model and transformer were hosted on Watson Machine Learning and they used Watson OpenScale monitors to scan bias, explainability, fairness and drift.
    
    * ### Natural Language Processing
-   Currently I am building MVP in area of social listening case, scrapping the content from social platforms, analysing it with  [python libraries](https://www.ibm.com/natural-language-processing) and translating the insights into business value. I am also using Large Language Models from Huggingface, and from IBM [watsonx.ai](https://www.ibm.com/watsonx).
+   I have built Miniman Viable Products using NLP, as an exaample, one case was about social listening: scrapping & analysis of social content using [python libraries](https://www.ibm.com/natural-language-processing) and translating the insights into business value.
    
    * ### Optimization
-   Please see my two [Decision Optimization workshops](https://michalkordyzon.github.io/watsonjam/) that I made for my clients. Decision Optimization (aka prescriptive analytics) is a great way to enrich machine learning projects.
+   See my two [Decision Optimization workshops](https://michalkordyzon.github.io/watsonjam/), I've made them for clients starting to use IBM Decision Optimization (aka prescriptive analytics). It's a great way to enrich machine learning projects, and funny thing is that so few client even know about it.
    For optimization projects I am using CPLEX, and DOcplex, two IBM libraries that can help build our dynamic programming models efficiently.
    
    * ### Visual Recognition
-   Using Detectron framework on IBM platfrom named Maximo Visual Inspection I have created a model where client's AGV carts were inspected for security, giving great value of automated daily security checks. Watch [this youtube video](https://www.youtube.com/watch?v=keC8Tnj8OJ8&ab_channel=IBMDeveloper) for more information. 
+   Using Detectron, Yolo and FAster R-CNN I delivered value in many visual recognition projects. The platform for this was Maximo Visual Inspection. As example, I was creating a model for one client where AGV carts were inspected for security by the model, which saved time on and gave high accuracy comparing to human inspection. The movie made after project completion is [here](https://www.youtube.com/watch?v=keC8Tnj8OJ8&ab_channel=IBMDeveloper). 
    
    * ### Neuro-symbolic AI
    It's always beneficial to attend a good summer school like [this one](https://ibm.github.io/neuro-symbolic-ai/events/ns-summerschool2022/). Neural-symbolic AI is kind of deductive system allowing you to put a reasoning layer on top of your neural nets.
