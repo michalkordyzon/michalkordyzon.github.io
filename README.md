@@ -18,7 +18,7 @@ My new technical blog:  [mlog](https://mlog.space/)
 ## I am a data scientist working @IBM
 
 ## genAI related projects
-2023 and 2024 were exciting years as GenAI spread rapidly and new breakthroughs appeared almost weekly. During that time, I worked on several GenAI projects using the watsonx.ai (IBM’s platform for LLMs). These projects focused on RAG applications, automated report generation (from both tabular data and documents), and “intelligent” search.
+Starting in end of 2022 the ear of genAI started, this technology  spread rapidly and new breakthroughs appeared almost weekly. Since then, I've been working mainly on genAI projects using open-source and proprietary watsonx.ai (IBM’s platform for LLMs). These projects focused on RAG applications, automated report generation (from both tabular data and documents), and “intelligent” search.
 
 2025 is shaping up to be the year of AI agents. For me it's importnat. Not only because of their business value, but also as a personal milestone. I’ve been fascinated by agentic AI since 2017, giving public talks and joining early projects, though I still viewed it as a distant future. One example I often used to trigger semi-futuristic, semi-technical discussions was an IBM Research project where an AI agent played Pac-Man. The special thing was that AI agent played 'ethically' and avoided 'killing' ghosts (the reward function in reinfocement learning). Here is the link: [ethical Pacman](https://www.fastcompany.com/90255740/ibm-explores-the-intersection-of-ai-ethics-and-pac-man).
 
