@@ -11,23 +11,19 @@
 My new technical blog (it's a very recent project):[mlog](https://mlog.space/)
 <br>
 <br>
-As requested, here is the old link to [2020 Optimization workshops](https://michalkordyzon.github.io/watsonjam/)
-<br>
-<br>
 <br>
 
 
 
 ## I am a data scientist working @IBM.
 
+## genAI related projects
 2023 and 2024 were exciting years as GenAI spread rapidly and new breakthroughs appeared almost weekly. During that time, I worked on several GenAI projects using the watsonx.ai (IBM’s platform for LLMs). These projects focused on RAG applications, automated report generation (from both tabular data and documents), and “intelligent” search.
 
 2025 is shaping up to be the year of AI agents. For me it's importnat. Not only because of their business value, but also as a personal milestone. I’ve been fascinated by agentic AI since 2017, giving public talks and joining early projects, though I still viewed it as a distant future. One example I often used to trigger semi-futuristic, semi-technical discussions was an IBM Research project where an AI agent played Pac-Man. The special thing was that AI agent played 'ethically' and avoided 'killing' ghosts (the reward function in reinfocement learning). Here is the link: [ethical Pacman](https://www.fastcompany.com/90255740/ibm-explores-the-intersection-of-ai-ethics-and-pac-man).
 
 
-
-## My interests before genAI era :
-
+## ML related projects
 
    * ### Machine Learning & Data Governance
    I engage in my projects as [an ML Engineer](https://www.credly.com/badges/6d6d21e9-eec4-463b-8f22-22d409103563), or as [a Data Scientist](https://www.credly.com/badges/4c421bd9-e323-4fb4-a8be-45cae51e85af). See the notes about [my latest ML project](https://michalkordyzon.github.io/watson_insurance/) as example. In this project I have used tweedie regressor with transformers to count pure premium for insurance product. Model and transformer were hosted on Watson Machine Learning and they used Watson OpenScale monitors to scan bias, explainability, fairness and drift.
