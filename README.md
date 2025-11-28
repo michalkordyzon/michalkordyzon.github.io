@@ -43,7 +43,7 @@ My new technical blog:  [mlog](https://mlog.space/)
    You will find general info about neural-symbolic AI [here](https://ibm.github.io/neuro-symbolic-ai/). 
    If you want the hands on experience, take all activities needed to get [this badge](https://www.credly.com/badges/a9c7f8c5-5d62-4437-aa57-977f779b21d5/linked_in?t=rh42yg).
    * ### Qiskit
-   In 2020 I have spent a summer (and few consecutive months) learning about [Qiskit](https://qiskit.org/), brilliant Python SDK for quantum programming. I have contributed to Qiskit in many ways, attended [hackathons](https://www.credly.com/badges/7e4653bd-141a-4280-8544-f345fb7232be), and enjoyed being the part of the community. I am glad IBM is making such risky bets. Google's Larry Page famously said: "Especially in technology, we need revolutionary change, not incremental change."
+   In 2020 I have spent a summer (and few consecutive months) learning about [Qiskit](https://qiskit.org/), great Python SDK for quantum programming. I have contributed to Qiskit in many ways, attended [hackathons](https://www.credly.com/badges/7e4653bd-141a-4280-8544-f345fb7232be), and enjoyed being the part of the community. I am glad IBM is making such risky bets. Google's Larry Page famously said: "Especially in technology, we need revolutionary change, not incremental change."
 
 <br>
 <br>
