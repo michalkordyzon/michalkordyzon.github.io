@@ -46,7 +46,7 @@ Starting in end of 2022 the era of genAI started. Since then, I've been working 
    In 2020 I have spent a summer (and few consecutive months) learning about [Qiskit](https://qiskit.org/), great Python SDK for quantum programming. I have contributed to Qiskit in many ways, attended [hackathons](https://www.credly.com/badges/7e4653bd-141a-4280-8544-f345fb7232be), and enjoyed being the part of the community. I am glad IBM is making such risky bets. Google's Larry Page famously said: "Especially in technology, we need revolutionary change, not incremental change."
 
 
-   * ### Sysem z
+   * ### IBM Z
    As an engineer I have grown from IBM Z platform, the most stable, reliable and long-lived server platform on the planet. IBM Z is unique and very attractive for both technical folks and the bussiness, it's like Warren Buffett of engineering. I had a priviledge to co-author z14 servers IBM Redbooks documentation in 2018. IBM Z prefers: reliability over hype, investment continuity over price wars and technology unexpected 'End of Marketing', quality over 'nice features'.   
 
 <br>
