@@ -46,6 +46,9 @@ enableRobotsTXT = true
     Title = "👋 Welcome to Michal’s Log"
     Content = "Notes, experiments, and progress logs from my ML/AI practice."
 
+  [params.author]
+    name = "Michał Kordyzon"
+
   # Social icons under the intro card / footer
   [[params.socialIcons]]
     name = "github"
