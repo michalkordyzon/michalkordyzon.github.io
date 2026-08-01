@@ -9,12 +9,12 @@
     <lastBuildDate>Fri, 28 Nov 2025 16:42:36 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Exploring Tiny Time Mixers Model</title>
-      <link>http://localhost:1313/posts/exploring-tiny-time-mixers-model/</link>
+      <title>Exploring Tiny Time-Mixer Model</title>
+      <link>http://localhost:1313/posts/exploring-tiny-time-mixer-model/</link>
       <pubDate>Fri, 28 Nov 2025 16:42:36 +0200</pubDate>
-      <guid>http://localhost:1313/posts/exploring-tiny-time-mixers-model/</guid>
+      <guid>http://localhost:1313/posts/exploring-tiny-time-mixer-model/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;2024 was a year where time series zero/few shot forecasting functioality made its way into LLM architectures: Moment, TimesFM, Chonos, Moirai, and many more showed up. Those were novel but, computationally, heavy to use. This triggered a second wave of lighter models incluging Tiny Time Mixers (TTM) architecture from IBM Research. TTM can work with just 1M parameters, supports  channel correlations and exogenous signals, and handles multivariate forecasting. Let&amp;rsquo;s dive in.&lt;/p&gt;</description>
+&lt;p&gt;2024 was a year where time series zero/few shot forecasting functioality made its way into LLM architectures: Moment, TimesFM, Chonos, Moirai, and many more showed up. Those were novel models but, computationally, heavy to use. So soon the second wave of lighter models appeared incluging Tiny Time-Mixer (TTM) architecture from IBM Research. TTM can work with just 1M parameters, it supports channel correlations and exogenous signals, and handles multivariate forecasting. Let&amp;rsquo;s dive in.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Granite Vision model notes</title>

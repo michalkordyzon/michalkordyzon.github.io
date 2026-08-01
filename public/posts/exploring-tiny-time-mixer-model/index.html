@@ -5,14 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>SmolDocling model notes | Michal’s Log</title>
+<title>Exploring Tiny Time-Mixer Model | Michal’s Log</title>
 <meta name="keywords" content="">
 <meta name="description" content="Introduction
-OCR on documents remains a challenging task. While printed text can often be recognized with 95% or higher accuracy, real-world documents — containing handwriting, non-standard layouts, and other irregularities — are still much harder to read accurately. There are high quality systems solving documents reading in sub-tasks: OCR, layout analysis, structure recognition, classification.
-Recent trend is using large vision-language models to solve whole convertion task in one shot, and giving the user opportunity to define additional specific tasks to do in the prompt.
-This post is about SmalDocling, a very tiny and compute-effient vision-language model doing the convertion task and the instruction task written into a prompt. The post is based on SmolDocling research paper.">
+2024 was a year where time series zero/few shot forecasting functioality made its way into LLM architectures: Moment, TimesFM, Chonos, Moirai, and many more showed up. Those were novel models but, computationally, heavy to use. So soon the second wave of lighter models appeared incluging Tiny Time-Mixer (TTM) architecture from IBM Research. TTM can work with just 1M parameters, it supports channel correlations and exogenous signals, and handles multivariate forecasting. Let&rsquo;s dive in.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/smoldocling-model-notes/">
+<link rel="canonical" href="http://localhost:1313/posts/exploring-tiny-time-mixer-model/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -21,7 +19,7 @@ This post is about SmalDocling, a very tiny and compute-effient vision-language 
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/smoldocling-model-notes/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/exploring-tiny-time-mixer-model/">
 <noscript>
     <style>
         #theme-toggle,
@@ -159,86 +157,73 @@ document.addEventListener("DOMContentLoaded", function () {
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
-      SmolDocling model notes
+      Exploring Tiny Time-Mixer Model
     </h1>
-    <div class="post-meta"><span title='2025-08-08 16:42:36 +0200 CEST'>August 8, 2025</span>&nbsp;·&nbsp;5 min
+    <div class="post-meta"><span title='2025-11-28 16:42:36 +0200 +0200'>November 28, 2025</span>&nbsp;·&nbsp;3 min
 
 </div>
   </header> 
   <div class="post-content"><h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
-<p>OCR on documents remains a challenging task. While printed text can often be recognized with 95% or higher accuracy, real-world documents — containing handwriting, non-standard layouts, and other irregularities — are still much harder to read accurately. There are high quality systems solving documents reading in sub-tasks: OCR, layout analysis, structure recognition, classification.<br>
-Recent trend is using large vision-language models to solve whole convertion task in one shot, and giving the user opportunity to define additional specific tasks to do in the prompt.
-This post is about SmalDocling, a very tiny and compute-effient vision-language model doing the convertion task and the instruction task written into a prompt. The post is based on <code>SmolDocling</code> <a href="https://arxiv.org/abs/2503.11576">research paper</a>.</p>
+<p>2024 was a year where time series zero/few shot forecasting functioality made its way into LLM architectures: Moment, TimesFM, Chonos, Moirai, and many more showed up. Those were novel models but, computationally, heavy to use. So soon the second wave of lighter models appeared incluging Tiny Time-Mixer (TTM) architecture from IBM Research. TTM can work with just 1M parameters, it supports channel correlations and exogenous signals, and handles multivariate forecasting. Let&rsquo;s dive in.</p>
+<p>You&rsquo;ll find the TTM research paper <a href="https://arxiv.org/pdf/2401.0395">here</a>.</p>
 <h2 id="architecture">Architecture<a hidden class="anchor" aria-hidden="true" href="#architecture">#</a></h2>
-<p><code>SmolDocling</code> model comes from family of Hugging Face&rsquo;s <code>SmolVLM</code>. It was trained on datasets allowing for recognition of captions, charts, forms, code, equations, tables, footnotes, lists, page footers &amp; headers, section headings, and text. <code>SmolDocling</code> does OCR on elements mentioned and recognizes the type and location. And here we have main task of <code>SmolDocling</code> - conversion and docuemnt understanding.</p>
+<p>Great way to think about TTMs is like this: a powerful feature extractor + mixing network that reads a 512-point window and outputs the next 96 points in one shot. No decoder loop. No cross-attention. No auto-regressive generation. Let&rsquo;s get into details.</p>
+<p>TTM model is based on TSMixer architecture (it came originally from MLPMixer, Google, 2021). In TSMixer multi-head attention is replaced with simpler mechanism: mixing information across time and features using simple MLPs (linear layers). This solves the problem of classic self-attention being to slow for long sequences. Self-attention compares each token to every other token, this is  O(n²) complexity, so those &lsquo;classic&rsquo; attention layers scale quadratically with sequence length n. And the time series can be a very long sequences with thousands of tokens.</p>
+<p>So we have TSMixer encoder mechanism explained above. There is no decoder side needed, the model processes a fixed-length context window of 512 points and outputs the forecast window of 96 points directly.</p>
+<p>When it comes to pre-training/finetuning the TSMixer architecture has few nice additions to original MLPMixer: 1) adaptive patching across layers, 2)diverse resolution sampling, 3)resolution prefix tuning, 4) multi-level modeling strategy. I will focus on last one: modeling of channel correlations on many levels at once: independent singular channel patterns, cross channel patterns, global patterns.
+So, the TSMixer is modeling the data from many channels on 3 levels simulatneusly to give us the prediction. It&rsquo;s like making a prediction having several time-series data of potentially correlated channels:</p>
+<ul>
+<li>temperature</li>
+<li>traffic</li>
+<li>energy consumption</li>
+<li>humidity</li>
+</ul>
+<p>TTMs are modeling these on three levels simultaneously.</p>
+<p>1B samples used in model creation comes from Monash and Libcity datasets. Monash is ~250M samples and Libcity is the rest. Monash collects time series from many areas: weather, traffic, banking, bitcoin, eletricity, and more. Libcity is about city traffic time series. IBM&rsquo;s TTM models are open-sourced on huggingface, you can find more details in Training Data section here: <a href="https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2">https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2</a></p>
+<figure>
+  <img src="/images/0005_ttm_architecture.jpg" alt="Sample" width="700">
+  <figcaption style="color: gray; font-style: normal; text-align: left;">
+    TTM architecture
+  </figcaption>
+</figure>
+<h2 id="running-the-model">Running the model<a hidden class="anchor" aria-hidden="true" href="#running-the-model">#</a></h2>
+<p>Trying this right now - <a href="https://colab.research.google.com/github/ibm-granite/granite-tsfm/blob/main/notebooks/hfdemo/ttm_getting_started.ipynb">https://colab.research.google.com/github/ibm-granite/granite-tsfm/blob/main/notebooks/hfdemo/ttm_getting_started.ipynb</a></p>
+<p>(notes and thoughts will come soon)
+This colab uses TTM-512-96 model. It means that one can take input of 512 points and make a prediction 96 points.</p>
+<p>The notebook load ETTh2.csv, one of widely used benchmark time-series datasets and its about load levels of electrical system connected to power (electrical) transformer.</p>
+<p>First change was loading data from machine-related signals to stocks (7 stock tickers, close dates from 2015.01 to 2025.12, ~2700 points for each ticker).</p>
+<p>Results without any customization were poor:</p>
 <!-- <img src="/images/0001.jpg" alt="Sample" width="800"> -->
-<figure>
-  <img src="/images/0001.jpg" alt="Sample" width="800">
-  <figcaption style="color: gray; font-style: normal; text-align: left;">
-    SmolDocling architecture
-  </figcaption>
-</figure>
-<p>The red cube named as Vision Encoder on the picture above is the image encoder used in <code>SmolVM</code> models, <code>SigLIP-base path-16/512 (93M)</code>. It comes from Google’s CLIP-style image encoders — replacing CLIP’s (OpenAI) contrastive softmax loss with a sigmoid cross-entropy loss (this change makes training more stable and more accurate when matching images and text). Its superpowers are low-memory and fast inference. Those superpowers are used here for multimodal reasoning tasks.</p>
-<h2 id="usage">Usage<a hidden class="anchor" aria-hidden="true" href="#usage">#</a></h2>
-<p>We can get bigger <code>SmolDocling</code> model (), or any large vision-language model to quickly get higher accuracy but also &lsquo;heavier&rsquo; inference and so much bigger usage of compute.
-<code>SmolDocling</code> can find right niche for deployments on edge devices or on any resource-constrained setting. Another usage is quick prototyping and  experimentation, it&rsquo;s always better to start with small and quick models and avoid complexity that comes with a size.</p>
-<h2 id="doctags">DocTags<a hidden class="anchor" aria-hidden="true" href="#doctags">#</a></h2>
-<p>Another interesting thing is a standard proposed by <code>smolDocling</code> model - <code>DocTags</code>. It is created to use efficiently in inference and to train VLMs in a standardized way. HTML and Mardown formats are ambigous and by do not keep document layout context. <code>DocTags</code> separates text content from layout of document which bring clarity. <code>DocTags</code> has also clear and concise format which saves tokens and thus, inference and training on VLMs. See the basic example:</p>
-<p>HTML:</p>
-<pre tabindex="0"><code>&lt;h1&gt;Invoice&lt;/h1&gt;&lt;p&gt;Customer Name: John Doe&lt;/p&gt;
-</code></pre><p>~20–25 tokens.</p>
-<p>DocTags:</p>
-<pre tabindex="0"><code>&lt;heading&gt;Invoice&lt;/heading&gt;&lt;para&gt;Customer Name: John Doe&lt;/para&gt;
-</code></pre><p>~12–15 tokens.</p>
-<p><code>DocTags</code> leveraged OTLS standard and its full vocabulary. OTSL stands for Optimized Table Structure Language, and it&rsquo;s specialized markup language designed for keeping table structure information. This choise also bring clarity and saves tokens.</p>
-<h2 id="pre-training-datasets">Pre-training datasets<a hidden class="anchor" aria-hidden="true" href="#pre-training-datasets">#</a></h2>
-<p>Seeing lack of good multimodal document data SmolDocling team created new public data set: <code>DocLayNet-PT</code>. It contains 1.4M pages from <code>DocFM</code> dataset (PDF documents from CommonCrawl, Wikipedia, business domains).
-Original <code>SmolVLM</code> had <code>DocVQA</code> capabilities (Document Visual Question Answering). To keep this feature the <code>smolDocling</code> was trained on Docmatix dataset with added <code>DocTags</code> format information.</p>
-<h2 id="task-specific-datasets">Task-specific datasets<a hidden class="anchor" aria-hidden="true" href="#task-specific-datasets">#</a></h2>
-<p>The model was also fine-tuned for specific tasks like recognition of layout, tables, charts, code, and equations.
-For layout and tables the team prepared:</p>
-<ul>
-<li>76k pages of human annotated and reviewed documets from <code>DocLayNet-PT</code> (created dataset was named <code>DocLayNet v2</code>)</li>
-<li>63k pages of tables and text from WordScape dataset</li>
-<li>250k pages of synthetic annotations from wikpedia for layout, colors and fonts (created dataset was named <code>SynthDocNet</code>)
-Tables recognition were covered by fine-tuning with <code>PubTables-1M</code>, <code>FinTabNet</code>, <code>WikiTableSet</code>, and tabular info from <code>WordScape</code>. Table strcuture information was pushed into OTSL format, so that each cell tag had it&rsquo;s corresponding structure and text.</li>
-</ul>
-<p>Public chart recognition datasets are low quality or not diversified. That triggered creation of anothe dataset containing in total 2.5 million visually diverse charts in 4 categories: line, pie, bar, and stacked bar. SmolDocling team created also code recognition dataset addressing lack of datasets containing code as images. The dataset includes 9.3 million code snippets rendered at 120 dpi. Another dataset was created regarding mathematical formulas: using 730k unique formulas from publi datasets and collecting 4.7 million formulas from arXiv. Final equations dataset contains 5.5 million unique formulas rendered at 120 dpi.</p>
-<!-- <figure>
-  <img src="/images/0002.jpg" alt="Sample" width="800">
-  <figcaption>The treemap vis showing training datasets used for smolDocling</figcaption>
-</figure> -->
-<figure>
-  <img src="/images/0002.jpg" alt="Sample" width="800">
-  <figcaption style="color: gray; font-style: normal; text-align: left;">
-    Training datasets used for smolDocling
-  </figcaption>
-</figure>
-<h2 id="experiments">Experiments<a hidden class="anchor" aria-hidden="true" href="#experiments">#</a></h2>
-<p>To enhance recognition of specific elements and to introduce ability to write no-code instructions to smolDocling model the team has put rule-based techniques and <code>Granite-3.1-2b-instruct</code> model. Random elements were taken from <code>DocLayNet-PT</code> and according instructions for this element were created, something like: &ldquo;Perform OCR at bbox&rdquo;, or &ldquo;Identify page element type at bbox&rdquo;. Training with Cauldron was applied to avoid catastrophic forgetting.</p>
-<p>The model was trained on:</p>
-<ul>
-<li>64 NVIDIA A100 80GB GPUs,</li>
-<li>one epoch lasting 38 hours, 4 epochs in total.</li>
-<li>optimizer: AdamW</li>
-<li>learning rates: 2x 10^-4, 2x10^-6</li>
-<li>gradient clipping: 1.0</li>
-<li>warmup ratio 0.03</li>
-</ul>
-<p>Achieved inference efficiency:</p>
-<ul>
-<li>page conversion time: 0.35 seconds</li>
-<li>memory usage: 0.489GB VRAM</li>
-<li>max sequence length: 8192 tokens</li>
-<li>the model cam process 3 pages at a time</li>
-</ul>
-<p>SmolDocling is a small but efficient vision-language model for document conversion.
-It produces rich structured output in a single pass, which reduces error accumulation compared to multi-stage systems.
-The model can link captions to images, preserve code formatting, and remove redundant headers or footers.
-Typical issues include missing tags, malformed structure, and repetitive token loops.
-Future work should improve page element localization for better accuracy.
-Overall, SmolDocling shows that compact models with optimized formats can rival much larger models in multi-task document understanding.</p>
+<!-- ## Datasets
 
+Several interesting datasets were used for Granite Vision training. First is DocFM, a dataset created in IBM and mentioned in previous note on smalDocling model. Granite Vision Team focused on using only  a part of DocFM, specifically on synthetic visual QA datasets as a seed for creation synthetic dataset named DocFM verbalization-based VQA (DocFM VQA). Verbalized representation is simply descrption of visual elemnts like charts or pictures, etc. 
+Similarly, next sythetic datasets were created: 
+- Synthetic Chart VQA, synthetic chart with QA pairs
+- Synthetic Flowchart VQA, synthetic flowcharts with QA pairs
+- DocFM-ChartExtraction, synthetic dataset for teaching the Granive Vision how to extract data from tables
+- DocFM Visual Cue and Captioning, 
+- DocFM Rule Based Grounding  
+
+Full corpus of datasets used for Granite Vision training is in the picture below.
+<figure>
+  <img src="/images/0004.jpg" alt="Sample" width="800">
+  <figcaption style="color: gray; font-style: normal; text-align: left;">
+    Granite Vision architecture
+  </figcaption>
+</figure>
+
+
+
+## Data preprocessing
+
+Data pre-processing consisted of several annotation and filtering procedures aimed at ensuring compliance with regulatory and safety standards as well as improving data quality.
+Restricted Data removal: All public datasets were subject to a legal review to detect any potential licensing or PII-related risks. Data with unclear usage rights or originating outside the US was excluded.
+CSAM removal: State-of-the-art NSFW detection systems were applied to eliminate all Child Sexual Abuse Material.
+Face blurring: All visual PII was obfuscated by applying automated face-blurring techniques.
+Deduplication: To avoid redundancy across merged collections, duplicate records were removed. Detection relied on exact pixel matching and perceptual hash methods to account for minor variations, as well as identification of duplicate text entries. -->
+<p>work in progress&hellip;.</p>
+<!-- ## Training procecure -->
+<!-- ## Evaluation -->
 
   </div>
 
@@ -246,8 +231,8 @@ Overall, SmolDocling shows that compact models with optimized formats can rival 
     <ul class="post-tags">
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/posts/granite-vision-model-notes/">
-    <span class="title">« Prev</span>
+  <a class="next" href="http://localhost:1313/posts/granite-vision-model-notes/">
+    <span class="title">Next »</span>
     <br>
     <span>Granite Vision model notes</span>
   </a>
