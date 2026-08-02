@@ -1,5 +1,8 @@
 name: Deploy Hugo site to Pages
 
+
+
+
 on:
   push:
     branches: [ main ]
@@ -27,19 +30,23 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "latest"
+          hugo-version: "0.164.0"
           extended: true  # keep true if your theme uses SCSS
 
       - name: Build
         run: |
           hugo --minify \
-               --baseURL "https://mlog.space/" \
+               --baseURL "https://michalkordyzon.github.io/Mlog/" \
                --cleanDestinationDir
           # Optional while testing:
           # --buildDrafts --buildFuture
 
+
+
+
+          
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./public   # upload the built site
 
