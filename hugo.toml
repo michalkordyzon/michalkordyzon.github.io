@@ -44,8 +44,8 @@ enableRobotsTXT = true
 
   # Home intro card (swap to profileMode later if you prefer)
   [params.homeInfoParams]
-    Title = "👋 Welcome to Michal’s Log"
-    Content = "Notes, experiments, and progress logs from my ML/AI practice."
+    Title = "👋 Welcome to my work journal"
+    Content = "From time to time, I’ll share what I’m building, learning, and figuring out."
 
   [params.author]
     name = "Michał Kordyzon"
