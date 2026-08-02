@@ -38,9 +38,6 @@ jobs:
           # Optional while testing:
           # --buildDrafts --buildFuture
 
-
-
-
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
