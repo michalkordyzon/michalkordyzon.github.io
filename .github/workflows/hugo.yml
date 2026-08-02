@@ -34,10 +34,7 @@ jobs:
           extended: true  # keep true if your theme uses SCSS
 
       - name: Build
-        run: |
-          hugo --minify \
-               --baseURL "https://michalkordyzon.github.io/Mlog/" \
-               --cleanDestinationDir
+        run: hugo --minify --cleanDestinationDir
           # Optional while testing:
           # --buildDrafts --buildFuture
 
